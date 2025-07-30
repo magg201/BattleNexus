@@ -1,0 +1,911 @@
+/* ========================================
+   BATTLE NEXUS - RESPONSIVE STYLES
+   Mobile-first responsive design
+   ======================================== */
+
+/* ========================================
+   MOBILE NAVIGATION
+   ======================================== */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background: rgba(10, 14, 26, 0.98);
+        backdrop-filter: blur(10px);
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: var(--spacing-lg);
+        padding: var(--spacing-xl) 0;
+        transition: left var(--transition-normal);
+        z-index: 999;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        width: 90%;
+        text-align: center;
+    }
+
+    .nav-link {
+        display: block;
+        width: 100%;
+        padding: var(--spacing-md);
+        font-size: 1.2rem;
+        border: 1px solid rgba(100, 255, 218, 0.2);
+        border-radius: var(--radius-md);
+        background: rgba(100, 255, 218, 0.05);
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+        background: var(--gradient-primary);
+        border-color: var(--text-accent);
+    }
+
+    .nav-link::after {
+        display: none;
+    }
+}
+
+/* ========================================
+   HERO SECTION RESPONSIVE
+   ======================================== */
+@media (max-width: 992px) {
+    .hero-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: var(--spacing-lg);
+    }
+
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .hero-stats {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .stat-item {
+        min-width: 120px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 80vh;
+        padding: var(--spacing-xl) 0;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing-sm);
+    }
+
+    .btn {
+        width: 200px;
+        justify-content: center;
+    }
+
+    .hero-stats {
+        gap: var(--spacing-md);
+    }
+
+    .stat-number {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .stat-item {
+        min-width: 100px;
+        padding: var(--spacing-sm);
+    }
+
+    .stat-number {
+        font-size: 1.5rem;
+    }
+}
+
+/* ========================================
+   PAGE HEADER RESPONSIVE
+   ======================================== */
+@media (max-width: 768px) {
+    .page-header {
+        padding: 100px 0 var(--spacing-lg);
+    }
+
+    .page-title {
+        font-size: 2.5rem;
+    }
+
+    .page-subtitle {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-title {
+        font-size: 2rem;
+    }
+
+    .page-subtitle {
+        font-size: 1rem;
+    }
+}
+
+/* ========================================
+   SECTION TITLES RESPONSIVE
+   ======================================== */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: var(--spacing-lg);
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 1.5rem;
+        margin-bottom: var(--spacing-md);
+    }
+}
+
+/* ========================================
+   GRID LAYOUTS RESPONSIVE
+   ======================================== */
+@media (max-width: 992px) {
+    .features-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: var(--spacing-md);
+    }
+
+    .modes-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+
+    .characters-container,
+    .weapons-container {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: var(--spacing-md);
+    }
+}
+
+@media (max-width: 768px) {
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .characters-container,
+    .weapons-container {
+        grid-template-columns: 1fr;
+    }
+
+    .news-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ========================================
+   FEATURE CARDS RESPONSIVE
+   ======================================== */
+@media (max-width: 768px) {
+    .feature-card {
+        padding: var(--spacing-lg);
+        text-align: center;
+    }
+
+    .feature-icon {
+        font-size: 2.5rem;
+        margin-bottom: var(--spacing-sm);
+    }
+
+    .feature-card h3 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .feature-card {
+        padding: var(--spacing-md);
+    }
+
+    .feature-icon {
+        font-size: 2rem;
+    }
+
+    .feature-card h3 {
+        font-size: 1.2rem;
+    }
+}
+
+/* ========================================
+   MODE CARDS RESPONSIVE
+   ======================================== */
+@media (max-width: 768px) {
+    .mode-image {
+        height: 150px;
+    }
+
+    .mode-icon {
+        font-size: 3rem;
+    }
+
+    .mode-content {
+        padding: var(--spacing-md);
+    }
+
+    .mode-content h3 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .mode-image {
+        height: 120px;
+    }
+
+    .mode-icon {
+        font-size: 2.5rem;
+    }
+
+    .mode-content h3 {
+        font-size: 1.2rem;
+    }
+}
+
+/* ========================================
+   CHARACTER/WEAPON CARDS RESPONSIVE
+   ======================================== */
+@media (max-width: 768px) {
+    .character-image,
+    .weapon-image {
+        height: 150px;
+    }
+
+    .character-icon,
+    .weapon-icon {
+        font-size: 3rem;
+    }
+
+    .character-info,
+    .weapon-info {
+        padding: var(--spacing-md);
+    }
+
+    .character-name,
+    .weapon-name {
+        font-size: 1.3rem;
+    }
+
+    .character-abilities,
+    .weapon-features {
+        gap: var(--spacing-xs);
+    }
+
+    .ability,
+    .feature {
+        font-size: 0.75rem;
+        padding: 4px 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .character-image,
+    .weapon-image {
+        height: 120px;
+    }
+
+    .character-icon,
+    .weapon-icon {
+        font-size: 2.5rem;
+    }
+
+    .character-name,
+    .weapon-name {
+        font-size: 1.2rem;
+    }
+
+    .stat {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-xs);
+    }
+
+    .stat-bar {
+        width: 100%;
+        margin: 0;
+    }
+
+    .stat-value {
+        align-self: flex-end;
+    }
+}
+
+/* ========================================
+   FILTER BUTTONS RESPONSIVE
+   ======================================== */
+@media (max-width: 768px) {
+    .category-filters {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing-sm);
+    }
+
+    .filter-btn {
+        width: 200px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .filter-btn {
+        width: 150px;
+        padding: var(--spacing-xs) var(--spacing-sm);
+        font-size: 0.9rem;
+    }
+}
+
+/* ========================================
+   ABOUT PAGE RESPONSIVE
+   ======================================== */
+@media (max-width: 992px) {
+    .overview-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+
+    .overview-stats {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+
+    .image-placeholder {
+        height: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .feature-item {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: var(--spacing-md);
+        padding: var(--spacing-md);
+    }
+
+    .feature-item .feature-icon {
+        justify-self: center;
+    }
+
+    .overview-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .image-placeholder {
+        height: 200px;
+    }
+
+    .image-placeholder i {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .overview-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .feature-item {
+        padding: var(--spacing-sm);
+    }
+
+    .feature-content h3 {
+        font-size: 1.2rem;
+    }
+}
+
+/* ========================================
+   GAME MODES DETAIL RESPONSIVE
+   ======================================== */
+@media (max-width: 992px) {
+    .modes-detail .modes-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .modes-detail .modes-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mode-header {
+        padding: var(--spacing-sm) var(--spacing-md);
+    }
+
+    .mode-header h3 {
+        font-size: 1.2rem;
+    }
+
+    .mode-body {
+        padding: var(--spacing-md);
+    }
+}
+
+/* ========================================
+   SYSTEM REQUIREMENTS RESPONSIVE
+   ======================================== */
+@media (max-width: 992px) {
+    .requirements-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .req-card {
+        padding: var(--spacing-md);
+    }
+
+    .req-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .req-card li {
+        font-size: 0.9rem;
+    }
+}
+
+/* ========================================
+   NEWS PAGE RESPONSIVE
+   ======================================== */
+@media (max-width: 992px) {
+    .featured-news {
+        grid-template-columns: 1fr;
+    }
+
+    .news-image {
+        height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .news-image {
+        height: 150px;
+    }
+
+    .news-icon {
+        font-size: 3rem;
+    }
+
+    .news-content {
+        padding: var(--spacing-md);
+    }
+
+    .news-title {
+        font-size: 1.5rem;
+    }
+
+    .news-card-image {
+        height: 120px;
+    }
+
+    .news-card-icon {
+        font-size: 2rem;
+    }
+
+    .news-card-content {
+        padding: var(--spacing-md);
+    }
+
+    .news-card-title {
+        font-size: 1.1rem;
+    }
+
+    .news-card-footer {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    .news-meta {
+        flex-direction: column;
+        gap: var(--spacing-xs);
+    }
+
+    .news-tags {
+        gap: 4px;
+    }
+
+    .tag {
+        font-size: 0.7rem;
+        padding: 2px 6px;
+    }
+
+    .news-card-meta {
+        flex-direction: column;
+        gap: var(--spacing-xs);
+        align-items: flex-start;
+    }
+}
+
+/* ========================================
+   NEWSLETTER RESPONSIVE
+   ======================================== */
+@media (max-width: 992px) {
+    .newsletter-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .form-group {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+
+    .newsletter-input {
+        width: 100%;
+    }
+
+    .newsletter-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .newsletter-text h3 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .newsletter-text h3 {
+        font-size: 1.5rem;
+    }
+
+    .newsletter-text p {
+        font-size: 1rem;
+    }
+}
+
+/* ========================================
+   FOOTER RESPONSIVE
+   ======================================== */
+@media (max-width: 992px) {
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-lg);
+    }
+
+    .footer-section:first-child {
+        grid-column: 1 / -1;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+        text-align: center;
+    }
+
+    .footer-section h3 {
+        font-size: 1.3rem;
+    }
+
+    .footer-section h4 {
+        font-size: 1.1rem;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: var(--spacing-lg) 0 var(--spacing-md);
+    }
+
+    .footer-section {
+        margin-bottom: var(--spacing-md);
+    }
+
+    .footer-section h3 {
+        font-size: 1.2rem;
+    }
+
+    .footer-section h4 {
+        font-size: 1rem;
+    }
+
+    .social-links a {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+}
+
+/* ========================================
+   CONTAINER RESPONSIVE
+   ======================================== */
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 var(--spacing-md);
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 var(--spacing-sm);
+    }
+}
+
+/* ========================================
+   SPACING RESPONSIVE
+   ======================================== */
+@media (max-width: 768px) {
+    :root {
+        --spacing-xl: 2rem;
+        --spacing-lg: 1.5rem;
+    }
+
+    .features,
+    .game-modes,
+    .characters-grid,
+    .weapons-grid,
+    .news-grid,
+    .latest-news,
+    .newsletter,
+    .game-overview,
+    .gameplay-features,
+    .modes-detail,
+    .system-requirements {
+        padding: var(--spacing-lg) 0;
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        --spacing-xl: 1.5rem;
+        --spacing-lg: 1rem;
+    }
+
+    .features,
+    .game-modes,
+    .characters-grid,
+    .weapons-grid,
+    .news-grid,
+    .latest-news,
+    .newsletter,
+    .game-overview,
+    .gameplay-features,
+    .modes-detail,
+    .system-requirements {
+        padding: var(--spacing-md) 0;
+    }
+}
+
+/* ========================================
+   TYPOGRAPHY RESPONSIVE
+   ======================================== */
+@media (max-width: 768px) {
+    body {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        line-height: 1.2;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 0.85rem;
+    }
+}
+
+/* ========================================
+   BUTTON RESPONSIVE
+   ======================================== */
+@media (max-width: 768px) {
+    .btn {
+        padding: var(--spacing-sm) var(--spacing-md);
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn {
+        padding: var(--spacing-xs) var(--spacing-sm);
+        font-size: 0.85rem;
+    }
+}
+
+/* ========================================
+   UTILITY RESPONSIVE CLASSES
+   ======================================== */
+@media (max-width: 768px) {
+    .hide-mobile {
+        display: none !important;
+    }
+
+    .show-mobile {
+        display: block !important;
+    }
+
+    .text-center-mobile {
+        text-align: center !important;
+    }
+
+    .full-width-mobile {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .hide-small {
+        display: none !important;
+    }
+
+    .show-small {
+        display: block !important;
+    }
+}
+
+/* ========================================
+   LOADING STATES RESPONSIVE
+   ======================================== */
+@media (max-width: 768px) {
+    .loading-spinner {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* ========================================
+   ACCESSIBILITY RESPONSIVE
+   ======================================== */
+@media (max-width: 768px) {
+    /* Larger touch targets for mobile */
+    .nav-link,
+    .btn,
+    .filter-btn,
+    .social-links a {
+        min-height: 44px;
+        min-width: 44px;
+    }
+
+    /* Better contrast for small screens */
+    .text-muted {
+        color: #a0a8c7;
+    }
+}
+
+/* ========================================
+   PERFORMANCE OPTIMIZATIONS
+   ======================================== */
+@media (max-width: 768px) {
+    /* Reduce animations on mobile for better performance */
+    .feature-card,
+    .character-card,
+    .weapon-card,
+    .news-card {
+        animation: none;
+    }
+
+    /* Simplify gradients on mobile */
+    .hero-background {
+        background: var(--bg-darker);
+    }
+
+    /* Reduce blur effects on mobile */
+    .navbar {
+        backdrop-filter: none;
+        background: rgba(10, 14, 26, 0.98);
+    }
+}
+
+/* ========================================
+   PRINT STYLES
+   ======================================== */
+@media print {
+    * {
+        background: white !important;
+        color: black !important;
+        box-shadow: none !important;
+    }
+
+    .navbar,
+    .footer,
+    .btn,
+    .social-links,
+    .newsletter {
+        display: none !important;
+    }
+
+    .page-header {
+        padding: 20px 0 !important;
+    }
+
+    .container {
+        max-width: none !important;
+        padding: 0 !important;
+    }
+
+    .section-title,
+    .page-title {
+        color: black !important;
+        -webkit-text-fill-color: black !important;
+    }
+}
+
+/* ========================================
+   HIGH CONTRAST MODE
+   ======================================== */
+@media (prefers-contrast: high) {
+    :root {
+        --text-muted: #ffffff;
+        --bg-card: #000000;
+        --bg-accent: #ffffff;
+    }
+
+    .btn {
+        border: 2px solid currentColor;
+    }
+
+    .nav-link::after {
+        background: currentColor;
+    }
+}
+
+/* ========================================
+   DARK MODE PREFERENCE
+   ======================================== */
+@media (prefers-color-scheme: light) {
+    /* The site is designed for dark theme by default,
+       but we can provide light theme overrides if needed */
+    body.light-theme {
+        --bg-dark: #f8f9fa;
+        --bg-darker: #ffffff;
+        --bg-card: #ffffff;
+        --bg-accent: #e9ecef;
+        --text-light: #212529;
+        --text-muted: #6c757d;
+        --text-accent: #0066cc;
+    }
+}
