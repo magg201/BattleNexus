@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battle Nexus - Оружие</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1><i class="fas fa-bolt"></i> Battle Nexus</h1>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">О игре</a>
+                </li>
+                <li class="nav-item">
+                    <a href="characters.html" class="nav-link">Персонажи</a>
+                </li>
+                <li class="nav-item">
+                    <a href="weapons.html" class="nav-link active">Оружие</a>
+                </li>
+                <li class="nav-item">
+                    <a href="news.html" class="nav-link">Новости</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Арсенал</h1>
+            <p class="page-subtitle">Выбери свое оружие для победы</p>
+        </div>
+    </section>
+
+    <!-- Weapon Categories -->
+    <section class="weapon-categories">
+        <div class="container">
+            <div class="category-filters">
+                <button class="filter-btn active" data-category="all">Всё оружие</button>
+                <button class="filter-btn" data-category="assault">Штурмовые</button>
+                <button class="filter-btn" data-category="sniper">Снайперские</button>
+                <button class="filter-btn" data-category="shotgun">Дробовики</button>
+                <button class="filter-btn" data-category="energy">Энергетическое</button>
+                <button class="filter-btn" data-category="explosive">Взрывчатка</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Weapons Grid -->
+    <section class="weapons-grid">
+        <div class="container">
+            <div class="weapons-container">
+                <!-- Assault Rifles -->
+                <div class="weapon-card" data-category="assault">
+                    <div class="weapon-image">
+                        <i class="fas fa-gun weapon-icon"></i>
+                        <div class="weapon-rarity legendary">Легендарное</div>
+                    </div>
+                    <div class="weapon-info">
+                        <h3 class="weapon-name">Плазма-Штурм</h3>
+                        <p class="weapon-type"><i class="fas fa-bullseye"></i> Штурмовая винтовка</p>
+                        <div class="weapon-stats">
+                            <div class="stat">
+                                <span class="stat-label">Урон</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 85%"></div>
+                                </div>
+                                <span class="stat-value">85</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Скорострельность</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 80%"></div>
+                                </div>
+                                <span class="stat-value">80</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Точность</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 75%"></div>
+                                </div>
+                                <span class="stat-value">75</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Дальность</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 70%"></div>
+                                </div>
+                                <span class="stat-value">70</span>
+                            </div>
+                        </div>
+                        <p class="weapon-description">Высокотехнологичная винтовка с плазменными зарядами. Идеальна для средних дистанций.</p>
+                        <div class="weapon-features">
+                            <span class="feature">Плазменные заряды</span>
+                            <span class="feature">Автоприцеливание</span>
+                            <span class="feature">Энергетический щит</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="weapon-card" data-category="assault">
+                    <div class="weapon-image">
+                        <i class="fas fa-magic weapon-icon"></i>
+                        <div class="weapon-rarity epic">Эпическое</div>
+                    </div>
+                    <div class="weapon-info">
+                        <h3 class="weapon-name">Нексус-AR</h3>
+                        <p class="weapon-type"><i class="fas fa-bullseye"></i> Штурмовая винтовка</p>
+                        <div class="weapon-stats">
+                            <div class="stat">
+                                <span class="stat-label">Урон</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 75%"></div>
+                                </div>
+                                <span class="stat-value">75</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Скорострельность</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 85%"></div>
+                                </div>
+                                <span class="stat-value">85</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Точность</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 80%"></div>
+                                </div>
+                                <span class="stat-value">80</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Дальность</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 65%"></div>
+                                </div>
+                                <span class="stat-value">65</span>
+                            </div>
+                        </div>
+                        <p class="weapon-description">Универсальная штурмовая винтовка с высокой скорострельностью и стабильностью.</p>
+                        <div class="weapon-features">
+                            <span class="feature">Быстрая перезарядка</span>
+                            <span class="feature">Низкая отдача</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sniper Rifles -->
+                <div class="weapon-card" data-category="sniper">
+                    <div class="weapon-image">
+                        <i class="fas fa-crosshairs weapon-icon"></i>
+                        <div class="weapon-rarity legendary">Легендарное</div>
+                    </div>
+                    <div class="weapon-info">
+                        <h3 class="weapon-name">Квантовый Охотник</h3>
+                        <p class="weapon-type"><i class="fas fa-eye"></i> Снайперская винтовка</p>
+                        <div class="weapon-stats">
+                            <div class="stat">
+                                <span class="stat-label">Урон</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 100%"></div>
+                                </div>
+                                <span class="stat-value">100</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Скорострельность</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 30%"></div>
+                                </div>
+                                <span class="stat-value">30</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Точность</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 95%"></div>
+                                </div>
+                                <span class="stat-value">95</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Дальность</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 100%"></div>
+                                </div>
+                                <span class="stat-value">100</span>
+                            </div>
+                        </div>
+                        <p class="weapon-description">Снайперская винтовка с квантовой технологией. Один выстрел - одно убийство.</p>
+                        <div class="weapon-features">
+                            <span class="feature">Пробивание стен</span>
+                            <span class="feature">Тепловизор</span>
+                            <span class="feature">Замедление времени</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="weapon-card" data-category="sniper">
+                    <div class="weapon-image">
+                        <i class="fas fa-bullseye weapon-icon"></i>
+                        <div class="weapon-rarity epic">Эпическое</div>
+                    </div>
+                    <div class="weapon-info">
+                        <h3 class="weapon-name">Призрачный Прицел</h3>
+                        <p class="weapon-type"><i class="fas fa-eye"></i> Снайперская винтовка</p>
+                        <div class="weapon-stats">
+                            <div class="stat">
+                                <span class="stat-label">Урон</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 90%"></div>
+                                </div>
+                                <span class="stat-value">90</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Скорострельность</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 40%"></div>
+                                </div>
+                                <span class="stat-value">40</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Точность</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 90%"></div>
+                                </div>
+                                <span class="stat-value">90</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Дальность</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 95%"></div>
+                                </div>
+                                <span class="stat-value">95</span>
+                            </div>
+                        </div>
+                        <p class="weapon-description">Полуавтоматическая снайперская винтовка с глушителем и невидимыми пулями.</p>
+                        <div class="weapon-features">
+                            <span class="feature">Бесшумные выстрелы</span>
+                            <span class="feature">Невидимые трассеры</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Shotguns -->
+                <div class="weapon-card" data-category="shotgun">
+                    <div class="weapon-image">
+                        <i class="fas fa-fire weapon-icon"></i>
+                        <div class="weapon-rarity epic">Эпическое</div>
+                    </div>
+                    <div class="weapon-info">
+                        <h3 class="weapon-name">Инферно</h3>
+                        <p class="weapon-type"><i class="fas fa-fire-flame-curved"></i> Дробовик</p>
+                        <div class="weapon-stats">
+                            <div class="stat">
+                                <span class="stat-label">Урон</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 95%"></div>
+                                </div>
+                                <span class="stat-value">95</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Скорострельность</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 50%"></div>
+                                </div>
+                                <span class="stat-value">50</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Точность</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 40%"></div>
+                                </div>
+                                <span class="stat-value">40</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Дальность</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 35%"></div>
+                                </div>
+                                <span class="stat-value">35</span>
+                            </div>
+                        </div>
+                        <p class="weapon-description">Огненный дробовик, поджигающий противников. Смертелен на ближней дистанции.</p>
+                        <div class="weapon-features">
+                            <span class="feature">Поджог врагов</span>
+                            <span class="feature">Огненный урон</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Energy Weapons -->
+                <div class="weapon-card" data-category="energy">
+                    <div class="weapon-image">
+                        <i class="fas fa-bolt weapon-icon"></i>
+                        <div class="weapon-rarity legendary">Легендарное</div>
+                    </div>
+                    <div class="weapon-info">
+                        <h3 class="weapon-name">Ионная Пушка</h3>
+                        <p class="weapon-type"><i class="fas fa-radiation"></i> Энергетическое оружие</p>
+                        <div class="weapon-stats">
+                            <div class="stat">
+                                <span class="stat-label">Урон</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 88%"></div>
+                                </div>
+                                <span class="stat-value">88</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Скорострельность</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 70%"></div>
+                                </div>
+                                <span class="stat-value">70</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Точность</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 85%"></div>
+                                </div>
+                                <span class="stat-value">85</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Дальность</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 80%"></div>
+                                </div>
+                                <span class="stat-value">80</span>
+                            </div>
+                        </div>
+                        <p class="weapon-description">Высокотехнологичная энергетическая пушка с ионными зарядами.</p>
+                        <div class="weapon-features">
+                            <span class="feature">Цепная молния</span>
+                            <span class="feature">Электро паралич</span>
+                            <span class="feature">Пробивание щитов</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="weapon-card" data-category="energy">
+                    <div class="weapon-image">
+                        <i class="fas fa-sun weapon-icon"></i>
+                        <div class="weapon-rarity epic">Эпическое</div>
+                    </div>
+                    <div class="weapon-info">
+                        <h3 class="weapon-name">Солнечный Луч</h3>
+                        <p class="weapon-type"><i class="fas fa-radiation"></i> Лазерное оружие</p>
+                        <div class="weapon-stats">
+                            <div class="stat">
+                                <span class="stat-label">Урон</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 92%"></div>
+                                </div>
+                                <span class="stat-value">92</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Скорострельность</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 100%"></div>
+                                </div>
+                                <span class="stat-value">100</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Точность</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 100%"></div>
+                                </div>
+                                <span class="stat-value">100</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Дальность</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 90%"></div>
+                                </div>
+                                <span class="stat-value">90</span>
+                            </div>
+                        </div>
+                        <p class="weapon-description">Мощный лазерный луч, который прожигает все на своем пути.</p>
+                        <div class="weapon-features">
+                            <span class="feature">Непрерывный луч</span>
+                            <span class="feature">Пробивание стен</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Explosives -->
+                <div class="weapon-card" data-category="explosive">
+                    <div class="weapon-image">
+                        <i class="fas fa-bomb weapon-icon"></i>
+                        <div class="weapon-rarity legendary">Легендарное</div>
+                    </div>
+                    <div class="weapon-info">
+                        <h3 class="weapon-name">Нано-Граната</h3>
+                        <p class="weapon-type"><i class="fas fa-explosion"></i> Взрывчатка</p>
+                        <div class="weapon-stats">
+                            <div class="stat">
+                                <span class="stat-label">Урон</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 100%"></div>
+                                </div>
+                                <span class="stat-value">100</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Скорострельность</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 20%"></div>
+                                </div>
+                                <span class="stat-value">20</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Точность</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 60%"></div>
+                                </div>
+                                <span class="stat-value">60</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Дальность</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 50%"></div>
+                                </div>
+                                <span class="stat-value">50</span>
+                            </div>
+                        </div>
+                        <p class="weapon-description">Нанотехнологическая граната с программируемым взрывом и радиусом поражения.</p>
+                        <div class="weapon-features">
+                            <span class="feature">Отложенный взрыв</span>
+                            <span class="feature">Огромный радиус</span>
+                            <span class="feature">Разрушение построек</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="weapon-card" data-category="explosive">
+                    <div class="weapon-image">
+                        <i class="fas fa-rocket weapon-icon"></i>
+                        <div class="weapon-rarity epic">Эпическое</div>
+                    </div>
+                    <div class="weapon-info">
+                        <h3 class="weapon-name">Плазменная РПГ</h3>
+                        <p class="weapon-type"><i class="fas fa-rocket"></i> Ракетница</p>
+                        <div class="weapon-stats">
+                            <div class="stat">
+                                <span class="stat-label">Урон</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 95%"></div>
+                                </div>
+                                <span class="stat-value">95</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Скорострельность</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 25%"></div>
+                                </div>
+                                <span class="stat-value">25</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Точность</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 70%"></div>
+                                </div>
+                                <span class="stat-value">70</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Дальность</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 85%"></div>
+                                </div>
+                                <span class="stat-value">85</span>
+                            </div>
+                        </div>
+                        <p class="weapon-description">Ракетная установка с самонаводящимися плазменными ракетами.</p>
+                        <div class="weapon-features">
+                            <span class="feature">Самонаведение</span>
+                            <span class="feature">Плазменный взрыв</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Battle Nexus</h3>
+                    <p>Лучший шутер нового поколения с элементами строительства и выживания.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitch"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Игра</h4>
+                    <ul>
+                        <li><a href="about.html">О игре</a></li>
+                        <li><a href="characters.html">Персонажи</a></li>
+                        <li><a href="weapons.html">Оружие</a></li>
+                        <li><a href="news.html">Новости</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Поддержка</h4>
+                    <ul>
+                        <li><a href="#">Помощь</a></li>
+                        <li><a href="#">Системные требования</a></li>
+                        <li><a href="#">Обратная связь</a></li>
+                        <li><a href="#">Баг-репорты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Сообщество</h4>
+                    <ul>
+                        <li><a href="#">Форум</a></li>
+                        <li><a href="#">Discord</a></li>
+                        <li><a href="#">Reddit</a></li>
+                        <li><a href="#">Стримы</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Battle Nexus. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Weapon filtering
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const weaponCards = document.querySelectorAll('.weapon-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterBtns.forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                btn.classList.add('active');
+
+                const category = btn.dataset.category;
+
+                weaponCards.forEach(card => {
+                    if (category === 'all' || card.dataset.category === category) {
+                        card.style.display = 'block';
+                        setTimeout(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'translateY(0)';
+                        }, 100);
+                    } else {
+                        card.style.opacity = '0';
+                        card.style.transform = 'translateY(20px)';
+                        setTimeout(() => {
+                            card.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

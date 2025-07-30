@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battle Nexus - Персонажи</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1><i class="fas fa-bolt"></i> Battle Nexus</h1>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">О игре</a>
+                </li>
+                <li class="nav-item">
+                    <a href="characters.html" class="nav-link active">Персонажи</a>
+                </li>
+                <li class="nav-item">
+                    <a href="weapons.html" class="nav-link">Оружие</a>
+                </li>
+                <li class="nav-item">
+                    <a href="news.html" class="nav-link">Новости</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Персонажи</h1>
+            <p class="page-subtitle">Выбери своего героя для битвы</p>
+        </div>
+    </section>
+
+    <!-- Character Categories -->
+    <section class="character-categories">
+        <div class="container">
+            <div class="category-filters">
+                <button class="filter-btn active" data-category="all">Все</button>
+                <button class="filter-btn" data-category="assault">Штурмовики</button>
+                <button class="filter-btn" data-category="support">Поддержка</button>
+                <button class="filter-btn" data-category="recon">Разведка</button>
+                <button class="filter-btn" data-category="tank">Танки</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Characters Grid -->
+    <section class="characters-grid">
+        <div class="container">
+            <div class="characters-container">
+                <!-- Assault Characters -->
+                <div class="character-card" data-category="assault">
+                    <div class="character-image">
+                        <img src="штурмовик.jpg" alt="Блейз" class="character-photo">
+                        <div class="character-rarity legendary">Легендарный</div>
+                    </div>
+                    <div class="character-info">
+                        <h3 class="character-name">Блейз</h3>
+                        <p class="character-role"><i class="fas fa-fire"></i> Штурмовик</p>
+                        <div class="character-stats">
+                            <div class="stat">
+                                <span class="stat-label">Урон</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Скорость</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Защита</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 60%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="character-description">Мастер огневой мощи с уникальной способностью создавать огненные барьеры</p>
+                        <div class="character-abilities">
+                            <div class="ability">
+                                <i class="fas fa-fire-flame-curved"></i>
+                                <span>Огненный рывок</span>
+                            </div>
+                            <div class="ability">
+                                <i class="fas fa-shield"></i>
+                                <span>Огненный щит</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-category="assault">
+                    <div class="character-image">
+                        <img src="ниндзя.jpg" alt="Нова" class="character-photo">
+                        <div class="character-rarity epic">Эпический</div>
+                    </div>
+                    <div class="character-info">
+                        <h3 class="character-name">Нова</h3>
+                        <p class="character-role"><i class="fas fa-bolt"></i> Штурмовик</p>
+                        <div class="character-stats">
+                            <div class="stat">
+                                <span class="stat-label">Урон</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Скорость</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Защита</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 50%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="character-description">Быстрый ниндзя с электрическими способностями и телепортацией</p>
+                        <div class="character-abilities">
+                            <div class="ability">
+                                <i class="fas fa-bolt"></i>
+                                <span>Молниеносный удар</span>
+                            </div>
+                            <div class="ability">
+                                <i class="fas fa-eye"></i>
+                                <span>Фазовый сдвиг</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Support Characters -->
+                <div class="character-card" data-category="support">
+                    <div class="character-image">
+                        <img src="лечащий.jpg" alt="Аура" class="character-photo">
+                        <div class="character-rarity rare">Редкий</div>
+                    </div>
+                    <div class="character-info">
+                        <h3 class="character-name">Аура</h3>
+                        <p class="character-role"><i class="fas fa-heart"></i> Поддержка</p>
+                        <div class="character-stats">
+                            <div class="stat">
+                                <span class="stat-label">Урон</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 40%"></div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Скорость</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 70%"></div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Защита</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="character-description">Целительница команды с мощными баффами и лечащими способностями</p>
+                        <div class="character-abilities">
+                            <div class="ability">
+                                <i class="fas fa-heart-pulse"></i>
+                                <span>Групповое лечение</span>
+                            </div>
+                            <div class="ability">
+                                <i class="fas fa-shield-heart"></i>
+                                <span>Защитная аура</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-category="support">
+                    <div class="character-image">
+                        <img src="инженер.webp" alt="Техно" class="character-photo">
+                        <div class="character-rarity epic">Эпический</div>
+                    </div>
+                    <div class="character-info">
+                        <h3 class="character-name">Техно</h3>
+                        <p class="character-role"><i class="fas fa-wrench"></i> Поддержка</p>
+                        <div class="character-stats">
+                            <div class="stat">
+                                <span class="stat-label">Урон</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 60%"></div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Скорость</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 65%"></div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Защита</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="character-description">Инженер с дронами и турелями для поддержки команды</p>
+                        <div class="character-abilities">
+                            <div class="ability">
+                                <i class="fas fa-drone"></i>
+                                <span>Дрон поддержки</span>
+                            </div>
+                            <div class="ability">
+                                <i class="fas fa-chess-rook"></i>
+                                <span>Авто-турель</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recon Characters -->
+                <div class="character-card" data-category="recon">
+                    <div class="character-image">
+                        <img src="снайпер.jpg" alt="Призрак" class="character-photo">
+                        <div class="character-rarity legendary">Легендарный</div>
+                    </div>
+                    <div class="character-info">
+                        <h3 class="character-name">Призрак</h3>
+                        <p class="character-role"><i class="fas fa-eye"></i> Разведка</p>
+                        <div class="character-stats">
+                            <div class="stat">
+                                <span class="stat-label">Урон</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Скорость</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Защита</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 30%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="character-description">Снайпер-невидимка с возможностью маскировки и точными выстрелами</p>
+                        <div class="character-abilities">
+                            <div class="ability">
+                                <i class="fas fa-eye-slash"></i>
+                                <span>Невидимость</span>
+                            </div>
+                            <div class="ability">
+                                <i class="fas fa-crosshairs"></i>
+                                <span>Точный выстрел</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-category="recon">
+                    <div class="character-image">
+                        <img src="скаут.webp" alt="Скаут" class="character-photo">
+                        <div class="character-rarity rare">Редкий</div>
+                    </div>
+                    <div class="character-info">
+                        <h3 class="character-name">Скаут</h3>
+                        <p class="character-role"><i class="fas fa-binoculars"></i> Разведка</p>
+                        <div class="character-stats">
+                            <div class="stat">
+                                <span class="stat-label">Урон</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 70%"></div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Скорость</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Защита</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 55%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="character-description">Быстрый разведчик с дронами-шпионами и радарными способностями</p>
+                        <div class="character-abilities">
+                            <div class="ability">
+                                <i class="fas fa-satellite-dish"></i>
+                                <span>Радар врагов</span>
+                            </div>
+                            <div class="ability">
+                                <i class="fas fa-running"></i>
+                                <span>Ускорение</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tank Characters -->
+                <div class="character-card" data-category="tank">
+                    <div class="character-image">
+                        <img src="титан.jpg" alt="Титан" class="character-photo">
+                        <div class="character-rarity legendary">Легендарный</div>
+                    </div>
+                    <div class="character-info">
+                        <h3 class="character-name">Титан</h3>
+                        <p class="character-role"><i class="fas fa-shield"></i> Танк</p>
+                        <div class="character-stats">
+                            <div class="stat">
+                                <span class="stat-label">Урон</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Скорость</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 40%"></div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Защита</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 100%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="character-description">Неприступная крепость с энергетическими щитами и мощными атаками</p>
+                        <div class="character-abilities">
+                            <div class="ability">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Энергощит</span>
+                            </div>
+                            <div class="ability">
+                                <i class="fas fa-fist-raised"></i>
+                                <span>Сейсмоудар</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="character-card" data-category="tank">
+                    <div class="character-image">
+                        <img src="бастион.jpg" alt="Бастион" class="character-photo">
+                        <div class="character-rarity epic">Эпический</div>
+                    </div>
+                    <div class="character-info">
+                        <h3 class="character-name">Бастион</h3>
+                        <p class="character-role"><i class="fas fa-chess-rook"></i> Танк</p>
+                        <div class="character-stats">
+                            <div class="stat">
+                                <span class="stat-label">Урон</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Скорость</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 30%"></div>
+                                </div>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Защита</span>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 95%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="character-description">Тяжеловооруженный защитник с режимом стационарной турели</p>
+                        <div class="character-abilities">
+                            <div class="ability">
+                                <i class="fas fa-crosshairs"></i>
+                                <span>Турельный режим</span>
+                            </div>
+                            <div class="ability">
+                                <i class="fas fa-shield"></i>
+                                <span>Барьерный щит</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Battle Nexus</h3>
+                    <p>Лучший шутер нового поколения с элементами строительства и выживания.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitch"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Игра</h4>
+                    <ul>
+                        <li><a href="about.html">О игре</a></li>
+                        <li><a href="characters.html">Персонажи</a></li>
+                        <li><a href="weapons.html">Оружие</a></li>
+                        <li><a href="news.html">Новости</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Поддержка</h4>
+                    <ul>
+                        <li><a href="#">Помощь</a></li>
+                        <li><a href="#">Системные требования</a></li>
+                        <li><a href="#">Обратная связь</a></li>
+                        <li><a href="#">Баг-репорты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Сообщество</h4>
+                    <ul>
+                        <li><a href="#">Форум</a></li>
+                        <li><a href="#">Discord</a></li>
+                        <li><a href="#">Reddit</a></li>
+                        <li><a href="#">Стримы</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Battle Nexus. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Character filtering
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const characterCards = document.querySelectorAll('.character-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterBtns.forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                btn.classList.add('active');
+
+                const category = btn.dataset.category;
+
+                characterCards.forEach(card => {
+                    if (category === 'all' || card.dataset.category === category) {
+                        card.style.display = 'block';
+                        setTimeout(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'translateY(0)';
+                        }, 100);
+                    } else {
+                        card.style.opacity = '0';
+                        card.style.transform = 'translateY(20px)';
+                        setTimeout(() => {
+                            card.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
